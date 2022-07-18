@@ -1,0 +1,24 @@
+<table mat-table [dataSource]="detailedData">
+    <ng-container matColumnDef="City">
+        <th mat-header-cell *matHeaderCellDef> city </th>
+        <td mat-cell *matCellDef="let item"> {{item.City}} </td>
+    </ng-container>
+    <ng-container matColumnDef="TotalCovidCases">
+        <th mat-header-cell *matHeaderCellDef> Total-Cases </th>
+        <td mat-cell *matCellDef="let item"> {{item.TotalCovidCases}} </td>
+    </ng-container>
+    <ng-container matColumnDef="NewCovidCases">
+        <th mat-header-cell *matHeaderCellDef> New-Cases </th>
+        <td mat-cell *matCellDef="let item"> {{item.NewCovidCases}} </td>
+    </ng-container>
+    <ng-container matColumnDef="TotalCovidDeaths">
+        <th mat-header-cell *matHeaderCellDef> Total-Deaths </th>
+        <td mat-cell *matCellDef="let item"> {{item.TotalCovidDeaths}} </td>
+    </ng-container>
+    <ng-container matColumnDef="NewCovidDeaths">
+        <th mat-header-cell *matHeaderCellDef> New-Deaths </th>
+        <td mat-cell *matCellDef="let item"> {{item.NewCovidDeaths}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let detailedData; columns: displayedColumns;"></tr>
+</table>

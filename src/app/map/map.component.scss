@@ -1,0 +1,79 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 3;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.map {
+    display: flex;
+    margin: 50px auto;
+    align-items: center;
+}
+.map:first-child {
+    flex:3
+}
+
+.map-guide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    background-color: #e4e3e6;
+    margin-left: 50px;
+    padding: 0 15px;
+}
+
+.map-guide p {
+    font-size: 15px;
+    color: #000;
+    margin: 15px 10px;
+}
+
+.single-com {
+    display: flex;
+}
+
+.box {
+    height: 15px;
+    width: 25px;
+    margin: 15px 10px;
+    border: 2px solid #000;
+}
+
+.purple {
+    background: #4d004d;
+}
+
+.red {
+    background: #660000;
+}
+
+.orange {
+    background: #ff9900;
+}
+
+.yellow {
+    background: #ffff00;
+}
+
+.white {
+    background: #b4b1b7;
+}
+
+.caption {
+    margin-top: 0;
+}
+
+.caption {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400px;
+}
+
+
+
+

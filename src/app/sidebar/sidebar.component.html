@@ -1,0 +1,25 @@
+<mat-card class="covid-in-germany">
+      <mat-card-title class="card-title">{{state}}</mat-card-title>
+    <mat-card-content class="data-germany">
+        <div class="data-pair" *ngFor="let item of covidDataInState | keyvalue:originalOrder">
+          <p> {{item.key}} </p>
+          <p> {{item.value}} </p>
+        </div>       
+    </mat-card-content>
+    <mat-card-actions class="actions">
+      <button
+        *ngIf="stateId != 0"
+        (click)="openDetailDialog()"
+      >
+          More Details
+      </button>
+      <button
+        *ngIf="stateId != 0"
+        (click)="showDataforGermany()"
+      >
+        Germany
+      </button>
+  </mat-card-actions>
+
+  </mat-card>
+  
